@@ -1,0 +1,23 @@
+{
+  "name": "Tecno Service di Cuppini Manuel",
+  "short_name": "Tecno Service",
+  "description": "Impianti elettrici, condizionamento, automazione e videosorveglianza – Bologna e Ferrara",
+  "icons": [
+    {
+      "src": "/assets/img/web-app-manifest-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/assets/img/web-app-manifest-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "theme_color": "#0a3ee1",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "start_url": "/"
+}

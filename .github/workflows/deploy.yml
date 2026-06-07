@@ -1,0 +1,53 @@
+name: Deploy to Aruba
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:          # consente lancio manuale dalla UI di GitHub
+
+jobs:
+  deploy:
+    name: FTP Deploy
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # ── Nessun build step: sito statico HTML/CSS/JS ──────────────────────
+
+      - name: Deploy via FTP to Aruba
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server:   ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          port:     21
+
+          # Cartella locale da cui prendere i file
+          local-dir: ./
+
+          # Cartella remota su Aruba (di solito public_html o htdocs)
+          # Verifica il path esatto nel pannello di controllo Aruba
+          server-dir: /public_html/
+
+          # Protocollo: ftps = FTP over TLS (raccomandato su Aruba)
+          # Cambia in "ftp" se il piano non supporta TLS
+          protocol: ftps
+
+          # Non cancellare file remoti assenti in locale
+          # Metti "true" solo se vuoi una sincronizzazione "mirror" esatta
+          dangerous-clean-slate: false
+
+          # File e cartelle da NON caricare sul server
+          exclude: |
+            **/.git*
+            **/.git*/**
+            .github/**
+            .devcontainer/**
+            TODO.md
+            **/.DS_Store
+            assets/img/convert-to-webp.sh
+            **/node_modules/**

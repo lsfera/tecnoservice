@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Disallow: /assets/
+Disallow: /partials/
+
+Sitemap: https://www.tecnoservicecuppini.it/sitemap.xml

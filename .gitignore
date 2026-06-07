@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Dev-only files (not deployed)
+TODO.md
+assets/img/convert-to-webp.sh
+
+# Devcontainer (local dev only)
+.devcontainer/
+
+# Editor
+.vscode/
+*.swp
+*.swo
+
+# Logs
+*.log
