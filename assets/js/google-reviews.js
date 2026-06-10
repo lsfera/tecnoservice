@@ -56,6 +56,10 @@
     if (writeLink && placeId) {
       writeLink.href = 'https://search.google.com/local/writereview?placeid=' + encodeURIComponent(placeId);
     }
+    var mapsLink = document.getElementById('reviews-maps-link');
+    if (mapsLink && placeId) {
+      mapsLink.href = 'https://www.google.com/maps/place/?q=place_id:' + encodeURIComponent(placeId);
+    }
 
     var grid = document.getElementById('reviews-grid');
     if (!grid) return;
