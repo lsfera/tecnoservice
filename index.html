@@ -426,6 +426,48 @@
     </div>
   </section>
 
+  <!-- GOOGLE REVIEWS -->
+  <section class="py-24 px-4 bg-gray-50" id="reviews-section">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-14">
+        <span class="text-brand-600 text-sm font-semibold uppercase tracking-widest">Cosa dicono i clienti</span>
+        <h2 class="mt-2 text-3xl sm:text-4xl font-extrabold text-gray-900">Recensioni Google</h2>
+        <div id="reviews-summary" class="mt-4 flex items-center justify-center min-h-8">
+          <div class="h-5 w-52 bg-gray-200 rounded-full animate-pulse"></div>
+        </div>
+      </div>
+      <div id="reviews-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm animate-pulse">
+          <div class="flex items-center gap-3 mb-4"><div class="w-10 h-10 rounded-full bg-gray-200 shrink-0"></div><div class="flex-1 space-y-2"><div class="h-3 bg-gray-200 rounded w-2/3"></div><div class="h-3 bg-gray-200 rounded w-1/3"></div></div></div>
+          <div class="h-3 bg-gray-200 rounded w-1/3 mb-4"></div>
+          <div class="space-y-2"><div class="h-3 bg-gray-200 rounded"></div><div class="h-3 bg-gray-200 rounded"></div><div class="h-3 bg-gray-200 rounded w-4/5"></div></div>
+        </div>
+        <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm animate-pulse hidden sm:block">
+          <div class="flex items-center gap-3 mb-4"><div class="w-10 h-10 rounded-full bg-gray-200 shrink-0"></div><div class="flex-1 space-y-2"><div class="h-3 bg-gray-200 rounded w-2/3"></div><div class="h-3 bg-gray-200 rounded w-1/3"></div></div></div>
+          <div class="h-3 bg-gray-200 rounded w-1/3 mb-4"></div>
+          <div class="space-y-2"><div class="h-3 bg-gray-200 rounded"></div><div class="h-3 bg-gray-200 rounded"></div><div class="h-3 bg-gray-200 rounded w-4/5"></div></div>
+        </div>
+        <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm animate-pulse hidden lg:block">
+          <div class="flex items-center gap-3 mb-4"><div class="w-10 h-10 rounded-full bg-gray-200 shrink-0"></div><div class="flex-1 space-y-2"><div class="h-3 bg-gray-200 rounded w-2/3"></div><div class="h-3 bg-gray-200 rounded w-1/3"></div></div></div>
+          <div class="h-3 bg-gray-200 rounded w-1/3 mb-4"></div>
+          <div class="space-y-2"><div class="h-3 bg-gray-200 rounded"></div><div class="h-3 bg-gray-200 rounded"></div><div class="h-3 bg-gray-200 rounded w-4/5"></div></div>
+        </div>
+      </div>
+      <div class="text-center mt-10 flex flex-col sm:flex-row items-center justify-center gap-6">
+        <a id="reviews-write-link" href="https://www.google.com/maps/place/Tecno+Service+di+Cuppini+Manuel" target="_blank" rel="noopener"
+           class="inline-flex items-center gap-2 bg-brand-700 text-white font-semibold px-6 py-3 rounded-xl hover:bg-brand-800 transition-colors text-sm">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          Lascia una recensione
+        </a>
+        <a href="https://www.google.com/maps/place/Tecno+Service+di+Cuppini+Manuel" target="_blank" rel="noopener"
+           class="inline-flex items-center gap-2 text-sm text-gray-500 hover:text-brand-600 transition-colors">
+          Vedi tutte le recensioni su Google Maps
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
   <!-- CTA BANNER -->
   <section class="hero-gradient py-16 px-4 text-center text-white">
     <div class="max-w-2xl mx-auto">
@@ -445,5 +487,6 @@
 
   <script src="assets/js/analytics.js" defer></script>
   <script src="assets/js/cookie-banner.js" defer></script>
+  <script src="assets/js/google-reviews.js" defer></script>
 </body>
 </html>

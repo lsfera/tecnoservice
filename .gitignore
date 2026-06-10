@@ -17,3 +17,7 @@ assets/img/convert-to-webp.sh
 
 # Logs
 *.log
+
+# Secrets
+.env
+.env.*
