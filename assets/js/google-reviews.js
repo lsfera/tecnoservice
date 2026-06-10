@@ -1,5 +1,5 @@
 (function () {
-  var KEY = 'AIzaSyBFR5vU79t0ANe4jw5BMh4B03lxOMWZQO8';
+  var KEY = 'AIzaSyAkIMlJYONvOfZlmHeGgp7sIq-kGlC_RzE';
   var QUERY = 'Tecno Service di Cuppini Manuel Molinella';
 
   function esc(s) {
